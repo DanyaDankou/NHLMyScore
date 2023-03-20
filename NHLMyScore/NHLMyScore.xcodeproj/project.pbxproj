@@ -21,6 +21,9 @@
 		7447B1AE29C8581B001C8F1B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7447B1AD29C8581B001C8F1B /* Alamofire */; };
 		7447B1B129C8587D001C8F1B /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7447B1B029C8587D001C8F1B /* AlamofireImage */; };
 		7447B1B429C858A4001C8F1B /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = 7447B1B329C858A4001C8F1B /* SVGView */; };
+		7447B1B629C87B51001C8F1B /* IceImageFon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B1B529C87B50001C8F1B /* IceImageFon.swift */; };
+		7447B1BC29C89532001C8F1B /* StatsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B1BB29C89531001C8F1B /* StatsButton.swift */; };
+		7447B1C029C8A8D4001C8F1B /* RosterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		7447B1A529C8543B001C8F1B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		7447B1A729C8566B001C8F1B /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
 		7447B1AA29C85736001C8F1B /* TeamInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoView.swift; sourceTree = "<group>"; };
+		7447B1B529C87B50001C8F1B /* IceImageFon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceImageFon.swift; sourceTree = "<group>"; };
+		7447B1BB29C89531001C8F1B /* StatsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsButton.swift; sourceTree = "<group>"; };
+		7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +153,28 @@
 		7447B1A929C856D9001C8F1B /* TeamInfoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				7447B1AA29C85736001C8F1B /* TeamInfoView.swift */,
+				7447B1B929C8828C001C8F1B /* View */,
+				7447B1BA29C8829B001C8F1B /* ViewModel */,
 			);
 			path = TeamInfoSwiftUI;
+			sourceTree = "<group>";
+		};
+		7447B1B929C8828C001C8F1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7447B1AA29C85736001C8F1B /* TeamInfoView.swift */,
+				7447B1BB29C89531001C8F1B /* StatsButton.swift */,
+				7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */,
+				7447B1B529C87B50001C8F1B /* IceImageFon.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7447B1BA29C8829B001C8F1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +260,13 @@
 			files = (
 				7447B18529C38070001C8F1B /* AppDelegate.swift in Sources */,
 				7447B1A829C8566B001C8F1B /* TeamsTableViewController.swift in Sources */,
+				7447B1B629C87B51001C8F1B /* IceImageFon.swift in Sources */,
 				7447B19F29C85352001C8F1B /* NetworkService.swift in Sources */,
 				7447B1AB29C85736001C8F1B /* TeamInfoView.swift in Sources */,
+				7447B1C029C8A8D4001C8F1B /* RosterButton.swift in Sources */,
 				7447B1A429C8542E001C8F1B /* URLRequest.swift in Sources */,
 				7447B18729C38070001C8F1B /* SceneDelegate.swift in Sources */,
+				7447B1BC29C89532001C8F1B /* StatsButton.swift in Sources */,
 				7447B1A229C8541B001C8F1B /* ApiConst.swift in Sources */,
 				7447B1A629C8543B001C8F1B /* Models.swift in Sources */,
 			);
