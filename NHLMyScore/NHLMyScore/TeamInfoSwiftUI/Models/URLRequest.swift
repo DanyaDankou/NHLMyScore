@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 func getTeamsURL() -> URL? {
     let teamsURLString = APIConstants.baseURL + APIConstants.teamsEndpoint
     return URL(string: teamsURLString)

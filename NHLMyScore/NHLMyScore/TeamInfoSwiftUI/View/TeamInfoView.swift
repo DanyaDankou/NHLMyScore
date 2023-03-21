@@ -39,7 +39,7 @@ struct TeamInfoView: View {
                     .font(.title)
 
                 HStack {
-                    Text(teamInfo.venue.timeZone.id)
+                    Text(teamInfo.shortName)
                         .font(.subheadline)
 
                     Spacer()
@@ -78,14 +78,7 @@ struct TeamInfoView: View {
     
 
     
-private func getLogo(from url: URL) -> Image {
 
-    guard let imageData = try? Data(contentsOf: url),
-          let image = UIImage(data: imageData) else { return
-          Image(systemName: "xmark.shield") }
-    let uiImage = Image(uiImage: image)
-    return uiImage
-}
 
 
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7401EE2A29C8D27900418D83 /* TeamsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE2929C8D27900418D83 /* TeamsList.swift */; };
+		7401EE3029C9C81300418D83 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE2F29C9C81300418D83 /* TeamViewModel.swift */; };
+		7401EE7029CA02FF00418D83 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */; };
+		7401EE7229CA6ED600418D83 /* TeamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE7129CA6ED600418D83 /* TeamRow.swift */; };
 		7447B18529C38070001C8F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B18429C38070001C8F1B /* AppDelegate.swift */; };
 		7447B18729C38070001C8F1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B18629C38070001C8F1B /* SceneDelegate.swift */; };
 		7447B18C29C38070001C8F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7447B18A29C38070001C8F1B /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7401EE2929C8D27900418D83 /* TeamsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsList.swift; sourceTree = "<group>"; };
+		7401EE2F29C9C81300418D83 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
+		7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		7401EE7129CA6ED600418D83 /* TeamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRow.swift; sourceTree = "<group>"; };
 		7447B18129C38070001C8F1B /* NHLMyScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHLMyScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7447B18429C38070001C8F1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7447B18629C38070001C8F1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,12 +86,11 @@
 		7447B18329C38070001C8F1B /* NHLMyScore */ = {
 			isa = PBXGroup;
 			children = (
-				7447B1A029C85409001C8F1B /* Models */,
-				7447B19C29C383D2001C8F1B /* Services */,
 				7447B19929C38383001C8F1B /* Main */,
-				7447B1A929C856D9001C8F1B /* TeamInfoSwiftUI */,
+				7447B19C29C383D2001C8F1B /* Services */,
 				7447B18D29C38076001C8F1B /* Assets.xcassets */,
 				7447B19229C38076001C8F1B /* Info.plist */,
+				7447B1A929C856D9001C8F1B /* TeamInfoSwiftUI */,
 				7447B19D29C383E5001C8F1B /* LaunchScreen */,
 				7447B19829C3836F001C8F1B /* AppDelegates */,
 			);
@@ -104,16 +111,8 @@
 			children = (
 				7447B18A29C38070001C8F1B /* Main.storyboard */,
 				7447B19B29C383B1001C8F1B /* View */,
-				7447B19A29C38394001C8F1B /* Model */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		7447B19A29C38394001C8F1B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7447B19B29C383B1001C8F1B /* View */ = {
@@ -153,6 +152,7 @@
 		7447B1A929C856D9001C8F1B /* TeamInfoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7447B1A029C85409001C8F1B /* Models */,
 				7447B1B929C8828C001C8F1B /* View */,
 				7447B1BA29C8829B001C8F1B /* ViewModel */,
 			);
@@ -166,6 +166,8 @@
 				7447B1BB29C89531001C8F1B /* StatsButton.swift */,
 				7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */,
 				7447B1B529C87B50001C8F1B /* IceImageFon.swift */,
+				7401EE2929C8D27900418D83 /* TeamsList.swift */,
+				7401EE7129CA6ED600418D83 /* TeamRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +175,8 @@
 		7447B1BA29C8829B001C8F1B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7401EE2F29C9C81300418D83 /* TeamViewModel.swift */,
+				7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -258,12 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7401EE2A29C8D27900418D83 /* TeamsList.swift in Sources */,
 				7447B18529C38070001C8F1B /* AppDelegate.swift in Sources */,
 				7447B1A829C8566B001C8F1B /* TeamsTableViewController.swift in Sources */,
+				7401EE7229CA6ED600418D83 /* TeamRow.swift in Sources */,
 				7447B1B629C87B51001C8F1B /* IceImageFon.swift in Sources */,
 				7447B19F29C85352001C8F1B /* NetworkService.swift in Sources */,
+				7401EE3029C9C81300418D83 /* TeamViewModel.swift in Sources */,
 				7447B1AB29C85736001C8F1B /* TeamInfoView.swift in Sources */,
 				7447B1C029C8A8D4001C8F1B /* RosterButton.swift in Sources */,
+				7401EE7029CA02FF00418D83 /* TeamsViewModel.swift in Sources */,
 				7447B1A429C8542E001C8F1B /* URLRequest.swift in Sources */,
 				7447B18729C38070001C8F1B /* SceneDelegate.swift in Sources */,
 				7447B1BC29C89532001C8F1B /* StatsButton.swift in Sources */,

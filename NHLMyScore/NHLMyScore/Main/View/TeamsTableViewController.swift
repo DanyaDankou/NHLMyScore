@@ -13,7 +13,6 @@ import SwiftUI
 class TeamsTableViewController: UITableViewController {
     
     var teams = [Team]()
-    var conferences = [Conference]()
     
     
     
@@ -26,7 +25,6 @@ class TeamsTableViewController: UITableViewController {
                     switch result {
                     case .success(let teamsResponse):
                         self.teams = teamsResponse.teams
-                        self.tableView.reloadData()
                     case .failure(let error):
                         print(error)
             }
@@ -53,7 +51,6 @@ class TeamsTableViewController: UITableViewController {
         return cell
     }
     
-
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let team = teams[indexPath.row]

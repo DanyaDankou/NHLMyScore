@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGy-bf-aLX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a8D-3w-wOy">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,13 +46,51 @@
             </objects>
             <point key="canvasLocation" x="465" y="29"/>
         </scene>
+        <!--Team Info View Controller-->
+        <scene sceneID="Rtj-SA-wyN">
+            <objects>
+                <viewController storyboardIdentifier="TeamInfoViewController" id="Fqs-36-rNU" customClass="TeamInfoViewController" customModule="NHLMyScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DTq-zm-Tw0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wem-b7-Th1">
+                                <rect key="frame" x="0.0" y="44" width="428" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icefon" translatesAutoresizingMaskIntoConstraints="NO" id="QMp-AJ-bWh">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="250"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="QMp-AJ-bWh" firstAttribute="top" secondItem="wem-b7-Th1" secondAttribute="top" id="7ns-cK-S9x"/>
+                                    <constraint firstItem="QMp-AJ-bWh" firstAttribute="leading" secondItem="wem-b7-Th1" secondAttribute="leading" id="8I7-R4-43t"/>
+                                    <constraint firstAttribute="height" constant="250" id="TDm-j2-kaG"/>
+                                    <constraint firstAttribute="trailing" secondItem="QMp-AJ-bWh" secondAttribute="trailing" id="fda-Nu-zbi"/>
+                                    <constraint firstAttribute="bottom" secondItem="QMp-AJ-bWh" secondAttribute="bottom" id="nhb-69-6Vw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v3g-Uv-ZcQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wem-b7-Th1" firstAttribute="trailing" secondItem="v3g-Uv-ZcQ" secondAttribute="trailing" id="4FI-ub-xSr"/>
+                            <constraint firstItem="wem-b7-Th1" firstAttribute="leading" secondItem="v3g-Uv-ZcQ" secondAttribute="leading" id="bf6-nn-cSv"/>
+                            <constraint firstItem="wem-b7-Th1" firstAttribute="top" secondItem="v3g-Uv-ZcQ" secondAttribute="top" id="sxL-NA-8Ye"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ukh-Eg-lDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="28"/>
+        </scene>
         <!--Hosting Controller-->
         <scene sceneID="jva-hB-3H4">
             <objects>
                 <hostingController id="a8D-3w-wOy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9q-CI-rSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1255" y="28"/>
+            <point key="canvasLocation" x="464" y="-706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0DM-RU-oSm">
@@ -71,6 +110,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icefon" width="290" height="180"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
