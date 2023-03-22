@@ -28,6 +28,8 @@
 		7447B1B629C87B51001C8F1B /* IceImageFon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B1B529C87B50001C8F1B /* IceImageFon.swift */; };
 		7447B1BC29C89532001C8F1B /* StatsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B1BB29C89531001C8F1B /* StatsButton.swift */; };
 		7447B1C029C8A8D4001C8F1B /* RosterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */; };
+		74F5BCE229CB159A00243B52 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCE129CB159A00243B52 /* CategoryRow.swift */; };
+		74F5BCE429CB583700243B52 /* RosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCE329CB583600243B52 /* RosterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		7447B1B529C87B50001C8F1B /* IceImageFon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceImageFon.swift; sourceTree = "<group>"; };
 		7447B1BB29C89531001C8F1B /* StatsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsButton.swift; sourceTree = "<group>"; };
 		7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterButton.swift; sourceTree = "<group>"; };
+		74F5BCE129CB159A00243B52 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		74F5BCE329CB583600243B52 /* RosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +166,8 @@
 		7447B1B929C8828C001C8F1B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7447B1AA29C85736001C8F1B /* TeamInfoView.swift */,
-				7447B1BB29C89531001C8F1B /* StatsButton.swift */,
-				7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */,
-				7447B1B529C87B50001C8F1B /* IceImageFon.swift */,
-				7401EE2929C8D27900418D83 /* TeamsList.swift */,
-				7401EE7129CA6ED600418D83 /* TeamRow.swift */,
+				74F5BCE029CB127100243B52 /* TeamDetailView */,
+				74F5BCDF29CAFF4700243B52 /* TeamListView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +179,28 @@
 				7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74F5BCDF29CAFF4700243B52 /* TeamListView */ = {
+			isa = PBXGroup;
+			children = (
+				7401EE2929C8D27900418D83 /* TeamsList.swift */,
+				7401EE7129CA6ED600418D83 /* TeamRow.swift */,
+			);
+			path = TeamListView;
+			sourceTree = "<group>";
+		};
+		74F5BCE029CB127100243B52 /* TeamDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7447B1AA29C85736001C8F1B /* TeamInfoView.swift */,
+				7447B1B529C87B50001C8F1B /* IceImageFon.swift */,
+				7447B1BF29C8A8D4001C8F1B /* RosterButton.swift */,
+				7447B1BB29C89531001C8F1B /* StatsButton.swift */,
+				74F5BCE129CB159A00243B52 /* CategoryRow.swift */,
+				74F5BCE329CB583600243B52 /* RosterView.swift */,
+			);
+			path = TeamDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +286,7 @@
 			files = (
 				7401EE2A29C8D27900418D83 /* TeamsList.swift in Sources */,
 				7447B18529C38070001C8F1B /* AppDelegate.swift in Sources */,
+				74F5BCE229CB159A00243B52 /* CategoryRow.swift in Sources */,
 				7447B1A829C8566B001C8F1B /* TeamsTableViewController.swift in Sources */,
 				7401EE7229CA6ED600418D83 /* TeamRow.swift in Sources */,
 				7447B1B629C87B51001C8F1B /* IceImageFon.swift in Sources */,
@@ -276,6 +299,7 @@
 				7447B18729C38070001C8F1B /* SceneDelegate.swift in Sources */,
 				7447B1BC29C89532001C8F1B /* StatsButton.swift in Sources */,
 				7447B1A229C8541B001C8F1B /* ApiConst.swift in Sources */,
+				74F5BCE429CB583700243B52 /* RosterView.swift in Sources */,
 				7447B1A629C8543B001C8F1B /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

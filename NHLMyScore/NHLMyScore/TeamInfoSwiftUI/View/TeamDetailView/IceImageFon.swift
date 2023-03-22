@@ -9,10 +9,12 @@ import SwiftUI
 
 struct IceImageFon: View {
     var body: some View {
-        Image("icefon")
+        Image("backgrounhead")
+        
             .resizable()
             .scaledToFill()
-
+            .opacity(0.4)
+            .blur(radius: 3)
     }
 }
 

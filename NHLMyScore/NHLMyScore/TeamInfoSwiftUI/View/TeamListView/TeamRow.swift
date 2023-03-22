@@ -21,8 +21,8 @@ struct TeamRow: View {
     }
 }
 
-//struct TeamRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TeamRow(team: TeamViewModel.get)
-//}
-//}
+struct TeamRow_Previews: PreviewProvider {
+    static var previews: some View {
+        TeamRow(team: Team(id: 3, name: "dsfds", link: "fsdfs", abbreviation: "fsdfs", teamName: "fds", locationName: "fsdfs", firstYearOfPlay: "fsd", shortName: "fdsfs", officialSiteUrl: "sgdgf"))
+}
+}
