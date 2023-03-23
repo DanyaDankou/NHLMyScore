@@ -23,7 +23,7 @@ struct Team: Codable, Identifiable {
     let officialSiteUrl: String
 //    let franchiseId: Int
 //    let active: Bool
-    
+//    let roster: PlayersResponse
 }
 
 struct Venue: Codable {
@@ -75,21 +75,24 @@ struct Player: Codable, Identifiable {
     let id: Int
     let fullName: String
     let firstName: String
-    let lastName: String
-    let primaryNumber: String
-    let birthDate: String
-    let currentAge: Int
-    let birthCity: String
-    let birthCountry: String
-    let nationality: String
-    let height: String
-    let weight: Int
-    let active: Bool
-    let alternateCaptain: Bool
-    let captain: Bool
-    let rookie: Bool
-    let shootsCatches: String
-    let rosterStatus: String
+//    let lastName: String
+//    let primaryNumber: String
+//    let birthDate: String
+//    let currentAge: Int
+//    let birthCity: String
+//    let birthCountry: String
+//    let nationality: String
+//    let height: String
+//    let weight: Int
+//    let active: Bool
+//    let alternateCaptain: Bool
+//    let captain: Bool
+//    let rookie: Bool
+//    let shootsCatches: String
+//    let rosterStatus: String
 }
 
+struct PlayersResponse: Codable {
+    let players: [Player]
+}
 

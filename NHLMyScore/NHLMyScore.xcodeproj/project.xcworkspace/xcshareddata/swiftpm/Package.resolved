@@ -11,12 +11,12 @@
         }
       },
       {
-        "package": "AlamofireImage",
-        "repositoryURL": "https://github.com/Alamofire/AlamofireImage.git",
+        "package": "AnimatedCollectionViewLayout",
+        "repositoryURL": "https://github.com/KelvinJin/AnimatedCollectionViewLayout",
         "state": {
-          "branch": "master",
-          "revision": "af1c41645ef2d3ab48ffb3fb3a11941c71e5f9a0",
-          "version": null
+          "branch": null,
+          "revision": "c15687d1c6db6d39ef1e54a6c5a5c2fe74a544a8",
+          "version": "1.1.0"
         }
       },
       {

@@ -9,15 +9,12 @@ import SVGView
 import SwiftUI
 
 struct TeamInfoView: View {
+    
     let team: Team
 
     var body: some View {
         VStack {
             ZStack {
-//                IceImageFon()
-//                    .scaledToFill()
-//                    .ignoresSafeArea(edges: .top)
-//                    .frame(height: 250)
 
                 SVGView(contentsOf: getLogoURL(for: team.id)!)
                     .frame(width: 200, height: 200)

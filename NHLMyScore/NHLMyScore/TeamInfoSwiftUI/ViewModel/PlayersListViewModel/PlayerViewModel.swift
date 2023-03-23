@@ -1,29 +1,29 @@
 //
-//  TeamViewModel.swift
+//  PlayerViewModel.swift
 //  NHLMyScore
 //
-//  Created by comp on 21.03.23.
+//  Created by comp on 23.03.23.
 //
 
 import Foundation
 import Combine
 
-class TeamViewModel: ObservableObject {
+class PlayerViewModel: ObservableObject {
 
-    @Published var team: Team?
+    @Published var player: Player?
     var cancellation: AnyCancellable?
-    let service = TeamService()
+    let service = PlayerService()
     
 
-    func getTeam(id: Int) {
+    func getPlayer(id: Int) {
         cancellation = service.get(id: id)
        .mapError({ (error) -> Error in
            print(error)
            return error
        })
        .sink(receiveCompletion: { _ in },
-             receiveValue: { team in
-               self.team = team
+             receiveValue: { player in
+               self.player = player
        })
    }
 }

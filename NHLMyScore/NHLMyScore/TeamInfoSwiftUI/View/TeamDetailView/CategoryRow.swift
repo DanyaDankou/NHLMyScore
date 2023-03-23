@@ -9,25 +9,29 @@ import SwiftUI
 
 
 struct CategoryRow: View {
+    
+    @State private var currentIndex = 0
         
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        
+        ScrollView(.horizontal, showsIndicators: true) {
+
             HStack (alignment: .top, spacing: 0){
-                
+
             RosterRow()
             InfoRow()
-                
-            }
-        }
-    }
-}
 
+            }
+    }
+  }
+}
 
 
 struct InfoRow: View {
     var body: some View {
         ZStack{
         VStack(alignment: .leading) {
+            
 
             Image("icefon")
             
@@ -100,3 +104,7 @@ struct CategoryRow_Previews: PreviewProvider {
         CategoryRow()
     }
 }
+
+
+
+

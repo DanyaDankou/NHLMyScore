@@ -13,6 +13,7 @@ class TeamsViewModel: ObservableObject {
     // MARK: Internal
 
     @Published var teams: [Team] = []
+    
     var cancellation: AnyCancellable?
     
     
