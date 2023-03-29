@@ -8,23 +8,23 @@
 import SwiftUI
 
 
-struct CategoryRow: View {
-    
-    @State private var currentIndex = 0
-        
-    var body: some View {
-        
-        ScrollView(.horizontal, showsIndicators: true) {
 
-            HStack (alignment: .top, spacing: 0){
-
-            RosterRow()
-            InfoRow()
-
-            }
-    }
-  }
-}
+//struct CategoryRow: View {
+//
+//
+//    var body: some View {
+//
+//        ScrollView(.horizontal, showsIndicators: true) {
+//
+//            HStack (alignment: .top, spacing: 0){
+//
+//            RosterRow()
+//            InfoRow()
+//
+//            }
+//    }
+//  }
+//}
 
 
 struct InfoRow: View {
@@ -55,13 +55,11 @@ struct InfoRow: View {
 struct RosterRow: View {
     var body: some View {
         
-//        NavigationView {
             
         ZStack {
             
         VStack(alignment: .leading) {
             
-//            NavigationLink(destination: RosterView()) {
             Image("icefon")
             
                 .resizable()
@@ -99,11 +97,11 @@ struct StrokeText: View {
     }
 }
 
-struct CategoryRow_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryRow()
-    }
-}
+//struct CategoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+////        CategoryRow()
+//    }
+//}
 
 
 

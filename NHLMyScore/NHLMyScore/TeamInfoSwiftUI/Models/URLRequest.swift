@@ -23,7 +23,7 @@ func getStandingsURL() -> URL? {
 }
 
 func getPlayersURL(for teamID: Int) -> URL? {
-    let playersURLString = APIConstants.baseURL + APIConstants.teamsEndpoint + "/\(teamID)" + APIConstants.playersEndpoint
+    let playersURLString = APIConstants.baseURL + APIConstants.teamsEndpoint + "/\(teamID)/" + APIConstants.roster
     return URL(string: playersURLString)
 }
 
@@ -36,4 +36,9 @@ func getLogoURL(for teamID: Int) -> URL? {
 func getStatisticsURL(for playerID: Int) -> URL? {
     let statisticsURLString = APIConstants.baseURL + APIConstants.statisticsEndpoint
     return URL(string: statisticsURLString)
+}
+
+func getHeadShotURL(for teamID: Int) -> URL? {
+    let logoURLString = APIConstants.headShotURL + "\(teamID)" + APIConstants.headShotFormat
+    return URL(string: logoURLString)
 }

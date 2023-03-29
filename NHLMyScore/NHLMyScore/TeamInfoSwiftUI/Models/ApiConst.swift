@@ -19,5 +19,7 @@ struct APIConstants {
     static let roster = "roster"
     static let logoURL = "https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/"
     static let logoFormat = ".svg"
+    static let headShotURL = "https://cms.nhl.bamgrid.com/images/headshots/current/168x168/"
+    static let headShotFormat = ".jpg"
 
 }

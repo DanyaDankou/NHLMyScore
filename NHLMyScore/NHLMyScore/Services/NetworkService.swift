@@ -9,28 +9,28 @@ import Foundation
 import Alamofire
 import Combine
 
-class NetworkingManager: ObservableObject {
-    
-    static let shared = NetworkingManager()
-    private init() {}
-
-    func fetch<T: Decodable>(from url: URL, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
-        AF.request(url).responseData { response in
-            switch response.result {
-            case .success(let data):
-                do {
-                    let decoder = JSONDecoder()
-                    let result = try decoder.decode(T.self, from: data)
-                    completion(.success(result))
-                } catch let error {
-                    completion(.failure(error))
-                }
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-}
+//class NetworkingManager: ObservableObject {
+//
+//    static let shared = NetworkingManager()
+//    private init() {}
+//
+//    func fetch<T: Decodable>(from url: URL, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
+//        AF.request(url).responseData { response in
+//            switch response.result {
+//            case .success(let data):
+//                do {
+//                    let decoder = JSONDecoder()
+//                    let result = try decoder.decode(T.self, from: data)
+//                    completion(.success(result))
+//                } catch let error {
+//                    completion(.failure(error))
+//                }
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//        }
+//    }
+//}
 
 
 class NetworkService {
@@ -52,28 +52,7 @@ class NetworkService {
                     let result = try decoder.decode(TeamsResponse.self, from: data)
                     let teams = result.teams
                     completion(.success(teams))
-                } catch let error {
-                    completion(.failure(error))
-                }
-            case .failure(let error):
-                completion(.failure(error))
-            }
-    }
-}
-    
-    func fetchPlayers(teamID: Int, completion: @escaping (Result<[Player], Error>) -> Void) {
-        guard let url = getPlayersURL(for: teamID) else {
-            completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
-            return
-        }
-        AF.request(url).responseData { response in
-            switch response.result {
-            case .success(let data):
-                do {
-                    let decoder = JSONDecoder()
-                    let result = try decoder.decode(PlayersResponse.self, from: data)
-                    let players = result.players
-                    completion(.success(players))
+                    
                 } catch let error {
                     completion(.failure(error))
                 }
@@ -83,6 +62,30 @@ class NetworkService {
     }
 }
 }
+
+//    func fetchPlayers(for teamID: Int, completion: @escaping (Result<[Player], Error>) -> Void) {
+//        
+//        guard let urlPlayers = getPlayersURL(for: teamID) else {
+//            completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
+//            return
+//        }
+//        AF.request(urlPlayers).responseData { response in
+//            switch response.result {
+//            case .success(let data):
+//                do {
+//                    let decoder = JSONDecoder()
+//                    let result = try decoder.decode(Roster.self, from: data)
+//                    let players = result.roster
+//                    completion(.success(players))
+//                } catch let error {
+//                    completion(.failure(error))
+//                }
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//    }
+//}
+//}
 
 
 class PlayerService {

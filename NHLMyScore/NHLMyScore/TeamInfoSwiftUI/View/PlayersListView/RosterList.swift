@@ -8,36 +8,36 @@
 import SwiftUI
 
 struct RosterList: View {
-        
     
-    @ObservedObject var viewModelPlayers = PlayersViewModel()
-    
+    var teamID: Int
+    @StateObject var playersViewModel = PlayersViewModel()
+
     
     var body: some View {
-        
         NavigationView {
-            List(viewModelPlayers.players) { player in
+            List(playersViewModel.roster) { player in
                 NavigationLink {
-                    PlayerInfoView()
+                    PlayerInfoView(player: player)
                 } label: {
                     PlayerRow(player: player)
                 }
             }
-            .navigationBarTitle("Roster", displayMode: .inline)
-                    }
-        .background(
-           Image("background")
-               .resizable()
-               .aspectRatio(contentMode: .fill)
-        )
-        .edgesIgnoringSafeArea(.all)
-               }
-           }
+            .navigationBarTitle("Players")
+        }
+        .onAppear {
+            playersViewModel.fetchRoster(for: teamID)
+        }
+    }
+
+}
+    
+          
+  
 
 
 
-struct RosterView_Previews: PreviewProvider {
+struct RosterList_Previews: PreviewProvider {
     static var previews: some View {
-        RosterList()
+        RosterList(teamID: 4)
     }
 }

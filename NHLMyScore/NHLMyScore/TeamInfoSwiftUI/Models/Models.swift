@@ -71,10 +71,13 @@ struct TeamInfoResponse: Codable {
 }
 
 
-struct Player: Codable, Identifiable {
-    let id: Int
-    let fullName: String
-    let firstName: String
+//struct Person: Codable, Identifiable {
+//    let id: Int
+//    let fullName: String
+//    let jerseyNumber: String?
+//    let position: Position
+
+
 //    let lastName: String
 //    let primaryNumber: String
 //    let birthDate: String
@@ -90,9 +93,48 @@ struct Player: Codable, Identifiable {
 //    let rookie: Bool
 //    let shootsCatches: String
 //    let rosterStatus: String
-}
+//}
 
-struct PlayersResponse: Codable {
-    let players: [Player]
-}
+//struct PlayersResponse: Codable {
+//    let players: [Person]
+//}
+
+//
+//struct RosterResponse: Codable {
+//    let roster: [Roster]
+//}
+
+//struct Roster: Codable {
+//    let person: Person
+//    let jerseyNumber: String?
+//    let position: Position
+//}
+//
+//struct Person: Codable {
+//    let id: Int
+//    let fullName: String
+//    let primaryNumber: String?
+//    let birthDate: String?
+//    let nationality: String?
+//    let height: String?
+//    let weight: String?
+//    let active: Bool?
+//    let rookie: Bool?
+//    let shootsCatches: String?
+//    let currentTeam: CurrentTeam
+//}
+
+//struct Position: Codable {
+//    let code: String
+//    let name: String
+//    let type: String
+//    let abbreviation: String
+//}
+//
+//struct CurrentTeam: Codable {
+//    let id: Int
+//    let name: String
+//    let link: String
+//}
+
 

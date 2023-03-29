@@ -9,13 +9,12 @@ import SVGView
 import SwiftUI
 
 struct TeamInfoView: View {
-    
+
     let team: Team
 
     var body: some View {
         VStack {
             ZStack {
-
                 SVGView(contentsOf: getLogoURL(for: team.id)!)
                     .frame(width: 200, height: 200)
                     .clipShape(Circle())
@@ -41,18 +40,27 @@ struct TeamInfoView: View {
             .padding()
             .padding()
             Spacer()
-        
+
             HStack(alignment: .center) {
-                CategoryRow()
-            }
+                ScrollView(.horizontal, showsIndicators: true) {
+                    HStack(alignment: .top, spacing: 0) {
+                        NavigationLink(destination: RosterList(teamID: team.id)) {
+                            Text("List of Players")
+                        }
+                        }
+                   
+                        RosterRow()
+                        InfoRow()
+                    }
+                }
             .padding()
             Spacer()
                 .navigationTitle(team.abbreviation)
                 .navigationBarTitleDisplayMode(.automatic)
         }
         .background(IceImageFon())
+        }
     }
-}
 
 
 struct TeamInfoView_Previews: PreviewProvider {

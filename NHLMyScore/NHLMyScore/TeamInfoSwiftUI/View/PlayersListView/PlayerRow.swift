@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct PlayerRow: View {
-
-    @ObservedObject var viewModelPlayer = PlayerViewModel()
+    
     var player: Player
+
+//    @ObservedObject var viewModelPlayer = PlayerViewModel()
     
     var body: some View {
-        HStack{
-            Text(player.fullName)
-        }
-        
+        HStack {
+           
+            CachedAsyncImageView(imageURL: getHeadShotURL(for: player.person.id),
+                                 imageSize: CGSize(width: 70, height: 70))
+            
+            Text(player.person.fullName)
+            Text(player.jerseyNumber)
     }
+}
 }
 
-struct PlayerRow_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayerRow(player: Player(id: 2, fullName: "Patrick Kane", firstName: "dan"))
-    }
-}
+//struct PlayerRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlayerRow(player: Player(id: , person: Person(id: 3, fullName: "Patrick Kane", link: "7489234"), jerseyNumber: "88", position: Position(code: "ds", name: "fdsfs", type: "fds", abbreviation: "dsf")))    }
+//}
+

@@ -5,31 +5,30 @@
 //  Created by comp on 23.03.23.
 //
 
-import Foundation
-import Combine
 import Alamofire
-
+import Combine
+import Foundation
 
 class PlayersViewModel: ObservableObject {
-    
-    
-    // MARK: Internal
-    @Published var players: [Player] = []
-    
-    private var cancellation: AnyCancellable?
-    
-    
-    // MARK: Lifecycle
+    @Published var roster: [Player] = []
 
-    
-    init() {
-        
-        NetworkService.shared.fetchPlayers(teamID: 3) { result in
-            switch result {
-            case .success(let players):
-                self.players = players
+    func fetchRoster(for teamID: Int) {
+        let url = "https://statsapi.web.nhl.com/api/v1/teams/\(teamID)/roster"
+
+        AF.request(url).responseDecodable(of: RosterFromJson.self) { response in
+            print(response)
+            switch response.result {
+            case .success(let rosterFromJson):
+                var roster: [Player] = []
+                var id = 0
+                rosterFromJson.roster.forEach { player in
+                    roster.append(Player(id: id, person: player.person, jerseyNumber: player.jerseyNumber, position: player.position))
+                    id += 1
+                }
+                self.roster = roster
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
+                debugPrint(error)
             }
         }
     }
