@@ -9,13 +9,9 @@ import Combine
 import Foundation
 
 class TeamsViewModel: ObservableObject {
-    
     // MARK: Internal
-
+    
     @Published var teams: [Team] = []
-    
-    var cancellation: AnyCancellable?
-    
     
     // MARK: Lifecycle
 
@@ -29,4 +25,6 @@ class TeamsViewModel: ObservableObject {
             }
         }
     }
+
+   
 }

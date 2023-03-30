@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct RosterList: View {
-    
     var teamID: Int
     @StateObject var playersViewModel = PlayersViewModel()
 
-    
     var body: some View {
         NavigationView {
             List(playersViewModel.roster) { player in
@@ -22,19 +20,13 @@ struct RosterList: View {
                     PlayerRow(player: player)
                 }
             }
-            .navigationBarTitle("Players")
+            .navigationBarTitle("Roster")
         }
         .onAppear {
             playersViewModel.fetchRoster(for: teamID)
         }
     }
-
 }
-    
-          
-  
-
-
 
 struct RosterList_Previews: PreviewProvider {
     static var previews: some View {

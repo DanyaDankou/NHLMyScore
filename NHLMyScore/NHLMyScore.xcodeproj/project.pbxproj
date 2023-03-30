@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7401EE2A29C8D27900418D83 /* TeamsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE2929C8D27900418D83 /* TeamsList.swift */; };
-		7401EE3029C9C81300418D83 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE2F29C9C81300418D83 /* TeamViewModel.swift */; };
 		7401EE7029CA02FF00418D83 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */; };
 		7401EE7229CA6ED600418D83 /* TeamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401EE7129CA6ED600418D83 /* TeamRow.swift */; };
+		741936A629D5972000C446E5 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 741936A529D5972000C446E5 /* QGrid */; };
 		7447B18529C38070001C8F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B18429C38070001C8F1B /* AppDelegate.swift */; };
 		7447B18729C38070001C8F1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447B18629C38070001C8F1B /* SceneDelegate.swift */; };
 		7447B18C29C38070001C8F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7447B18A29C38070001C8F1B /* Main.storyboard */; };
@@ -32,13 +32,11 @@
 		74F5BCEE29CBC8D100243B52 /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCED29CBC8D100243B52 /* PlayersViewModel.swift */; };
 		74F5BCF029CBCB5C00243B52 /* RosterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCEF29CBCB5C00243B52 /* RosterList.swift */; };
 		74F5BCF229CBD50100243B52 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCF129CBD50100243B52 /* PlayerRow.swift */; };
-		74F5BCF429CBD51C00243B52 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCF329CBD51C00243B52 /* PlayerViewModel.swift */; };
 		74F5BCF629CBD89600243B52 /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5BCF529CBD89600243B52 /* PlayerInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7401EE2929C8D27900418D83 /* TeamsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsList.swift; sourceTree = "<group>"; };
-		7401EE2F29C9C81300418D83 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		7401EE7129CA6ED600418D83 /* TeamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRow.swift; sourceTree = "<group>"; };
 		7447B18129C38070001C8F1B /* NHLMyScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHLMyScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +59,6 @@
 		74F5BCED29CBC8D100243B52 /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
 		74F5BCEF29CBCB5C00243B52 /* RosterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterList.swift; sourceTree = "<group>"; };
 		74F5BCF129CBD50100243B52 /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
-		74F5BCF329CBD51C00243B52 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		74F5BCF529CBD89600243B52 /* PlayerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741936A629D5972000C446E5 /* QGrid in Frameworks */,
 				74F5BCE729CBB3C500243B52 /* AnimatedCollectionViewLayout in Frameworks */,
 				7447B1B429C858A4001C8F1B /* SVGView in Frameworks */,
 				7447B1AE29C8581B001C8F1B /* Alamofire in Frameworks */,
@@ -103,9 +101,11 @@
 				7447B19929C38383001C8F1B /* Main */,
 				7447B18D29C38076001C8F1B /* Assets.xcassets */,
 				7447B19229C38076001C8F1B /* Info.plist */,
-				745D4F8C29D4D39E00A44853 /* CashedAsyncImage */,
 				7447B19C29C383D2001C8F1B /* Services */,
-				7447B1A929C856D9001C8F1B /* TeamInfoSwiftUI */,
+				745D4F8C29D4D39E00A44853 /* CashedAsyncImage */,
+				7447B1A029C85409001C8F1B /* Models */,
+				7447B1B929C8828C001C8F1B /* View */,
+				7447B1BA29C8829B001C8F1B /* ViewModel */,
 			);
 			path = NHLMyScore;
 			sourceTree = "<group>";
@@ -154,19 +154,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7447B1A929C856D9001C8F1B /* TeamInfoSwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				7447B1A029C85409001C8F1B /* Models */,
-				7447B1B929C8828C001C8F1B /* View */,
-				7447B1BA29C8829B001C8F1B /* ViewModel */,
-			);
-			path = TeamInfoSwiftUI;
-			sourceTree = "<group>";
-		};
 		7447B1B929C8828C001C8F1B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				74F5BCE029CB127100243B52 /* TeamDetailView */,
 				74F5BCDF29CAFF4700243B52 /* TeamListView */,
 				74F5BCEA29CBC7F800243B52 /* PlayersListView */,
 			);
@@ -213,7 +204,6 @@
 		74F5BCEA29CBC7F800243B52 /* PlayersListView */ = {
 			isa = PBXGroup;
 			children = (
-				74F5BCE029CB127100243B52 /* TeamDetailView */,
 				74F5BCEF29CBCB5C00243B52 /* RosterList.swift */,
 				74F5BCF129CBD50100243B52 /* PlayerRow.swift */,
 				74F5BCF529CBD89600243B52 /* PlayerInfoView.swift */,
@@ -224,7 +214,6 @@
 		74F5BCEB29CBC83E00243B52 /* TeamListViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7401EE2F29C9C81300418D83 /* TeamViewModel.swift */,
 				7401EE6F29CA02FF00418D83 /* TeamsViewModel.swift */,
 			);
 			path = TeamListViewModel;
@@ -234,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				74F5BCED29CBC8D100243B52 /* PlayersViewModel.swift */,
-				74F5BCF329CBD51C00243B52 /* PlayerViewModel.swift */,
 			);
 			path = PlayersListViewModel;
 			sourceTree = "<group>";
@@ -259,6 +247,7 @@
 				7447B1AD29C8581B001C8F1B /* Alamofire */,
 				7447B1B329C858A4001C8F1B /* SVGView */,
 				74F5BCE629CBB3C500243B52 /* AnimatedCollectionViewLayout */,
+				741936A529D5972000C446E5 /* QGrid */,
 			);
 			productName = NHLMyScore;
 			productReference = 7447B18129C38070001C8F1B /* NHLMyScore.app */;
@@ -292,6 +281,7 @@
 				7447B1AC29C8581B001C8F1B /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7447B1B229C858A4001C8F1B /* XCRemoteSwiftPackageReference "SVGView" */,
 				74F5BCE529CBB3C500243B52 /* XCRemoteSwiftPackageReference "AnimatedCollectionViewLayout" */,
+				741936A429D5971F00C446E5 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = 7447B18229C38070001C8F1B /* Products */;
 			projectDirPath = "";
@@ -327,7 +317,6 @@
 				7401EE7229CA6ED600418D83 /* TeamRow.swift in Sources */,
 				7447B1B629C87B51001C8F1B /* IceImageFon.swift in Sources */,
 				7447B19F29C85352001C8F1B /* NetworkService.swift in Sources */,
-				7401EE3029C9C81300418D83 /* TeamViewModel.swift in Sources */,
 				7447B1AB29C85736001C8F1B /* TeamInfoView.swift in Sources */,
 				74F5BCF629CBD89600243B52 /* PlayerInfoView.swift in Sources */,
 				7401EE7029CA02FF00418D83 /* TeamsViewModel.swift in Sources */,
@@ -340,7 +329,6 @@
 				7447B1A229C8541B001C8F1B /* ApiConst.swift in Sources */,
 				74F5BCEE29CBC8D100243B52 /* PlayersViewModel.swift in Sources */,
 				7447B1A629C8543B001C8F1B /* Models.swift in Sources */,
-				74F5BCF429CBD51C00243B52 /* PlayerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +550,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		741936A429D5971F00C446E5 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
 		7447B1AC29C8581B001C8F1B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -589,6 +585,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		741936A529D5972000C446E5 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 741936A429D5971F00C446E5 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
 		7447B1AD29C8581B001C8F1B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7447B1AC29C8581B001C8F1B /* XCRemoteSwiftPackageReference "Alamofire" */;

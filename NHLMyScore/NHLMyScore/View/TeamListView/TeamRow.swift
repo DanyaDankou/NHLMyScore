@@ -5,13 +5,12 @@
 //  Created by comp on 22.03.23.
 //
 
-import SwiftUI
 import SVGView
+import SwiftUI
 
 struct TeamRow: View {
-    
     var team: Team
-    
+
     var body: some View {
         HStack {
             SVGView(contentsOf: getLogoURL(for: team.id)!)
@@ -24,5 +23,5 @@ struct TeamRow: View {
 struct TeamRow_Previews: PreviewProvider {
     static var previews: some View {
         TeamRow(team: Team(id: 3, name: "dsfds", link: "fsdfs", abbreviation: "fsdfs", teamName: "fds", locationName: "fsdfs", firstYearOfPlay: "fsd", shortName: "fdsfs", officialSiteUrl: "sgdgf"))
-}
+    }
 }

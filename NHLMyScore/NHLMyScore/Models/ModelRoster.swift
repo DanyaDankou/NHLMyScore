@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RosterFromJson: Codable{
+struct RosterFromJson: Codable {
     let roster: [PlayerFromJson]
 }
 

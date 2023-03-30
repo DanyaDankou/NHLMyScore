@@ -9,7 +9,6 @@ import SVGView
 import SwiftUI
 
 struct TeamInfoView: View {
-
     let team: Team
 
     var body: some View {
@@ -43,25 +42,26 @@ struct TeamInfoView: View {
 
             HStack(alignment: .center) {
                 ScrollView(.horizontal, showsIndicators: true) {
-                    HStack(alignment: .top, spacing: 0) {
+                    HStack {
                         NavigationLink(destination: RosterList(teamID: team.id)) {
-                            Text("List of Players")
+                            RosterRow()
                         }
+                        .accentColor(.white)
+                        NavigationLink(destination: RosterList(teamID: team.id)) {
+                            InfoRow()
                         }
-                   
-                        RosterRow()
-                        InfoRow()
+                        .accentColor(.white)
                     }
                 }
+            }
             .padding()
             Spacer()
                 .navigationTitle(team.abbreviation)
                 .navigationBarTitleDisplayMode(.automatic)
         }
         .background(IceImageFon())
-        }
     }
-
+}
 
 struct TeamInfoView_Previews: PreviewProvider {
     static var previews: some View {
