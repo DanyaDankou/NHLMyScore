@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct RosterList: View {
+    
     var teamID: Int
-    @StateObject var playersViewModel = PlayersViewModel()
+    @ObservedObject var playersViewModel = PlayersViewModel()
 
     var body: some View {
-        NavigationView {
+//        NavigationView {
             List(playersViewModel.roster) { player in
                 NavigationLink {
-                    PlayerInfoView(player: player)
+                    PlayerInfoView(playerDetailViewModel: PlayersDetailViewModel(), player: player)
                 } label: {
                     PlayerRow(player: player)
                 }
             }
             .navigationBarTitle("Roster")
-        }
+//        }
         .onAppear {
             playersViewModel.fetchRoster(for: teamID)
         }

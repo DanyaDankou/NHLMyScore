@@ -11,19 +11,18 @@ struct Team: Codable, Identifiable {
     let id: Int
     let name: String
     let link: String
-//    let venue: Venue
+    let venue: Venue
     let abbreviation: String
     let teamName: String
     let locationName: String
     let firstYearOfPlay: String
-//    let division: Division
-//    let conference: Conference
-//    let franchise: Franchise
+    let division: Division
+    let conference: Conference
+    let franchise: Franchise
     let shortName: String
     let officialSiteUrl: String
-//    let franchiseId: Int
-//    let active: Bool
-//    let roster: PlayersResponse
+    let franchiseId: Int
+    let active: Bool
 }
 
 struct Venue: Codable {

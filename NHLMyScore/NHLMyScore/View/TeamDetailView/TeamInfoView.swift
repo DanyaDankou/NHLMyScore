@@ -9,6 +9,7 @@ import SVGView
 import SwiftUI
 
 struct TeamInfoView: View {
+    
     let team: Team
 
     var body: some View {
@@ -17,7 +18,7 @@ struct TeamInfoView: View {
                 SVGView(contentsOf: getLogoURL(for: team.id)!)
                     .frame(width: 200, height: 200)
                     .clipShape(Circle())
-                    .shadow(radius: 20)
+                    .shadow(radius: 10)
             }
 
             VStack(alignment: .leading) {
@@ -37,7 +38,7 @@ struct TeamInfoView: View {
             }
 
             .padding()
-            .padding()
+//            .padding()
             Spacer()
 
             HStack(alignment: .center) {
@@ -47,7 +48,7 @@ struct TeamInfoView: View {
                             RosterRow()
                         }
                         .accentColor(.white)
-                        NavigationLink(destination: RosterList(teamID: team.id)) {
+                        NavigationLink(destination: TeamDetailView(team: team)) {
                             InfoRow()
                         }
                         .accentColor(.white)
@@ -63,8 +64,8 @@ struct TeamInfoView: View {
     }
 }
 
-struct TeamInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        TeamInfoView(team: Team(id: 3, name: "dsfds", link: "fsdfs", abbreviation: "fsdfs", teamName: "fds", locationName: "fsdfs", firstYearOfPlay: "fsd", shortName: "fdsfs", officialSiteUrl: "sgdgf"))
-    }
-}
+//struct TeamInfoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TeamInfoView(team: Team(id: 3, name: "dsfds", link: "fsdfs", abbreviation: "fsdfs", teamName: "fds", locationName: "fsdfs", firstYearOfPlay: "fsd", shortName: "fdsfs", officialSiteUrl: "sgdgf"))
+//    }
+//}

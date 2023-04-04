@@ -21,23 +21,20 @@ struct PlayerRow: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text(player.person.fullName)
-                        .font(.title)
+                        .font(Font.custom("Futura", size: 20))
                     Spacer()
-//            Text(player.jerseyNumber)
                     StrokeText(text: player.jerseyNumber, width: 0.1, color: .black)
-                        .font(.custom("Baskerville", size: 30).bold())
+                        .font(.custom("Futura", size: 27).bold())
 
                         .padding(.trailing)
                 }
-                Text(player.position.name)
-                    .font(.subheadline)
             }
         }
     }
 }
 
-struct PlayerRow_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayerRow(player: Player(id: 8474141, person: Person(id: 3, fullName: "Patrick Kane", link: "7489234"), jerseyNumber: "88", position: Position(code: "ds", name: "fdsfs", type: "fds", abbreviation: "dsf")))
-    }
-}
+//struct PlayerRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlayerRow(player: Player(id: 8474141, person: Person(id: 3, fullName: "Patrick Kane", link: "7489234"), jerseyNumber: "88", position: Position(code: "ds", name: "fdsfs", type: "fds", abbreviation: "dsf")))
+//    }
+//}

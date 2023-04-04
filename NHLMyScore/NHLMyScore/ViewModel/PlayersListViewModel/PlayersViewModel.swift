@@ -13,10 +13,11 @@ class PlayersViewModel: ObservableObject {
     @Published var roster: [Player] = []
 
     func fetchRoster(for teamID: Int) {
+        
         let url = "https://statsapi.web.nhl.com/api/v1/teams/\(teamID)/roster"
 
         AF.request(url).responseDecodable(of: RosterFromJson.self) { response in
-            print(response)
+//            print(response)
             switch response.result {
             case .success(let rosterFromJson):
                 var roster: [Player] = []

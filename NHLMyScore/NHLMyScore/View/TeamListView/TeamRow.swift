@@ -9,6 +9,7 @@ import SVGView
 import SwiftUI
 
 struct TeamRow: View {
+    
     var team: Team
 
     var body: some View {
@@ -20,8 +21,8 @@ struct TeamRow: View {
     }
 }
 
-struct TeamRow_Previews: PreviewProvider {
-    static var previews: some View {
-        TeamRow(team: Team(id: 3, name: "dsfds", link: "fsdfs", abbreviation: "fsdfs", teamName: "fds", locationName: "fsdfs", firstYearOfPlay: "fsd", shortName: "fdsfs", officialSiteUrl: "sgdgf"))
-    }
-}
+//struct TeamRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TeamRow(team: Team(id: 3, name: "dsfds", link: "fsdfs", abbreviation: "fsdfs", teamName: "fds", locationName: "fsdfs", firstYearOfPlay: "fsd", shortName: "fdsfs", officialSiteUrl: "sgdgf"))
+//    }
+//}
