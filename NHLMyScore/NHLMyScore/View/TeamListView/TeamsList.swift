@@ -22,12 +22,6 @@ struct TeamsView: View {
             }
             .navigationBarTitle("Teams", displayMode: .inline)
         }
-        .background(
-            Image("background")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-        )
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -157,6 +157,7 @@ struct PlayerDetail: Decodable, Identifiable {
     let lastName: String
     let primaryNumber: String
     let birthDate: String
+    let currentAge: Int?
     let birthCity: String
     let birthStateProvince: String?
     let birthCountry: String
@@ -173,7 +174,7 @@ struct PlayerDetail: Decodable, Identifiable {
     let primaryPosition: PrimaryPosition
     
     enum CodingKeys: String, CodingKey {
-        case id, fullName, link, firstName, lastName, primaryNumber, birthDate, birthCity, birthStateProvince, birthCountry, nationality, height, weight, active, alternateCaptain, captain, rookie, shootsCatches, rosterStatus, currentTeam, primaryPosition
+        case id, fullName, link, firstName, lastName, primaryNumber, birthDate, currentAge, birthCity, birthStateProvince, birthCountry, nationality, height, weight, active, alternateCaptain, captain, rookie, shootsCatches, rosterStatus, currentTeam, primaryPosition
     }
 }
 

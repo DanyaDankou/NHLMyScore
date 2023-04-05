@@ -8,7 +8,7 @@
         <!--Hosting Controller-->
         <scene sceneID="jva-hB-3H4">
             <objects>
-                <hostingController id="a8D-3w-wOy" sceneMemberID="viewController"/>
+                <hostingController wantsFullScreenLayout="YES" id="a8D-3w-wOy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9q-CI-rSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="464" y="-706"/>

@@ -13,7 +13,6 @@ struct RosterList: View {
     @ObservedObject var playersViewModel = PlayersViewModel()
 
     var body: some View {
-//        NavigationView {
             List(playersViewModel.roster) { player in
                 NavigationLink {
                     PlayerInfoView(playerDetailViewModel: PlayersDetailViewModel(), player: player)
@@ -22,7 +21,6 @@ struct RosterList: View {
                 }
             }
             .navigationBarTitle("Roster")
-//        }
         .onAppear {
             playersViewModel.fetchRoster(for: teamID)
         }
