@@ -58,7 +58,7 @@ struct TeamInfoView: View {
             .padding()
             Spacer()
                 .navigationTitle(team.abbreviation)
-                .navigationBarTitleDisplayMode(.automatic)
+                .navigationBarTitleDisplayMode(.inline)
         }
         .background(IceImageFon())
     }

@@ -5,7 +5,7 @@
 //  Created by comp on 16.03.23.
 //
 
-
+import SwiftUI
 import UIKit
 import CoreData
 
@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setenv("CG_NUMERICS_SHOW_BACKTRACE", "1", 1)
+
         return true
     }
 

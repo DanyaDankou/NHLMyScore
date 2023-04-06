@@ -9,6 +9,7 @@ import SVGView
 import SwiftUI
 
 struct TeamsView: View {
+    
     @ObservedObject var viewModel = TeamsViewModel()
 
     var body: some View {
@@ -19,8 +20,8 @@ struct TeamsView: View {
                 } label: {
                     TeamRow(team: team)
                 }
+                .navigationBarTitle(Text("Teams"), displayMode: .inline)
             }
-            .navigationBarTitle("Teams", displayMode: .inline)
         }
     }
 }

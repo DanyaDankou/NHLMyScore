@@ -27,7 +27,6 @@ struct PlayerInfoView: View {
 
             VStack(alignment: .center) {
                 Text("\(player.person.fullName)  |  #\(player.jerseyNumber)")
-//                        .font(.system(size: 23)
                     .font(.custom("DIN Condensed", size: 30)
                         .bold())
 
@@ -47,36 +46,38 @@ struct PlayerInfoView: View {
             }
             .padding()
 
-            Divider()
-                .frame(height: 10)
-                .background(Color.gray)
-                .navigationBarTitle(player.person.fullName)
+            Rectangle()
+                .fill(Color.gray.opacity(0.7))
+                .frame(height: 20)
 
-            VStack(alignment: .leading) {
+                .navigationBarTitle(player.person.fullName)
+            Spacer()
+
+            VStack {
                 Text(player.person.fullName)
-                    .bold()
+                    .foregroundColor(.orange.opacity(0.8))
                 HStack {
                     Text("Born:")
-                        .bold()
+                        .foregroundColor(.orange.opacity(0.8))
                     Text(playerDetailViewModel.player?.birthDate ?? "")
                 }
                 HStack {
                     Text("Birthplace:")
-                        .bold()
+                        .foregroundColor(.orange.opacity(0.8))
                     Text("\(playerDetailViewModel.player?.birthCity ?? ""), \(playerDetailViewModel.player?.birthStateProvince ?? "N/A"),  \(playerDetailViewModel.player?.birthCountry ?? "")")
                 }
                 HStack {
                     Text("Position:")
-                        .bold()
+                        .foregroundColor(.orange.opacity(0.8))
                     Text(playerDetailViewModel.player?.primaryPosition.name ?? "")
                 }
                 HStack {
                     Text("Shoots hand:")
-                        .bold()
+                        .foregroundColor(.orange.opacity(0.8))
                     Text(playerDetailViewModel.player?.shootsCatches ?? "")
                 }
             }
-            .font(.system(size: 20))
+            .font(.custom("DIN Condensed", size: 30))
 
             .onAppear {
                 playerDetailViewModel.fetchPlayerDetail(for: player.person.id)

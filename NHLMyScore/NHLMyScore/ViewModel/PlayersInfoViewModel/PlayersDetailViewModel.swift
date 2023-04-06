@@ -10,6 +10,7 @@ import Combine
 
    
 class PlayersDetailViewModel: ObservableObject {
+    
     @Published var player: PlayerDetail?
     @Published var isLoading = false
     
@@ -42,3 +43,4 @@ class PlayersDetailViewModel: ObservableObject {
         }.resume()
     }
 }
+

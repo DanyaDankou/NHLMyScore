@@ -14,8 +14,15 @@ struct TeamRow: View {
 
     var body: some View {
         HStack {
-            SVGView(contentsOf: getLogoURL(for: team.id)!)
-                .frame(width: 50, height: 50)
+//            SVGView(contentsOf: getLogoURL(for: team.id)!)
+//                .frame(width: 50, height: 50)
+            
+            if let url = getLogoURL(for: team.id) {
+                            SVGView(contentsOf: url)
+                                .frame(width: 50, height: 50)
+                        } else {
+                            Text("Error loading image")
+                        }
             Text(team.name)
         }
     }

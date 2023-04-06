@@ -51,7 +51,7 @@ struct RosterRow: View {
                     .opacity(0.2)
                     .lineSpacing(2)
             }
-            StrokeText(text: "СОСТАВ", width: 0.2, color: Color.black)
+            StrokeText(text: "ROSTER", width: 0.2, color: Color.black)
                 .font(.custom("Baskerville", size: 50).bold())
 //        }
 //    }
