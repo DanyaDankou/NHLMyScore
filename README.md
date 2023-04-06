@@ -12,6 +12,9 @@ ________________________________________________________________________________
 
 <img width="175" alt="Снимок экрана 2023-04-06 в 09 25 24" src="https://user-images.githubusercontent.com/93947618/230335432-0da4264c-643e-4d86-983a-ff0b9b3905de.png">.<img width="175" alt="Снимок экрана 2023-04-06 в 09 28 08" src="https://user-images.githubusercontent.com/93947618/230335452-b8bfbb3a-2e0f-4f89-95fa-74079df1b782.png">
 
+![readmeGif-4](https://user-images.githubusercontent.com/93947618/230337228-35e3fc5c-b70f-4673-a4f9-64403107a0f7.gif)
+
+
 
 
 
