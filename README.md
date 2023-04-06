@@ -12,6 +12,6 @@ ________________________________________________________________________________
 
 <img width="175" alt="Снимок экрана 2023-04-06 в 09 25 24" src="https://user-images.githubusercontent.com/93947618/230335432-0da4264c-643e-4d86-983a-ff0b9b3905de.png">.<img width="175" alt="Снимок экрана 2023-04-06 в 09 28 08" src="https://user-images.githubusercontent.com/93947618/230335452-b8bfbb3a-2e0f-4f89-95fa-74079df1b782.png">
 
+______________________________________________________________________________________________________________________________________
 
-![readmeGif-3](https://user-images.githubusercontent.com/93947618/230338064-1a1ed9a0-2ebf-4a79-9a76-93c6c8f0128b.gif)![hockeyGif](https://user-images.githubusercontent.com/93947618/230338157-578ff3d0-cbc8-4ec4-ace5-67782099770f.gif)
 
