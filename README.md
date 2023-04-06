@@ -10,8 +10,9 @@ Welcome to the app for viewing information about players and teams in the NHL! T
 ___________________________________________________________________________________________________________________________________________________________
 
 
+<img width="175" alt="Снимок экрана 2023-04-06 в 09 25 24" src="https://user-images.githubusercontent.com/93947618/230335432-0da4264c-643e-4d86-983a-ff0b9b3905de.png">.<img width="175" alt="Снимок экрана 2023-04-06 в 09 28 08" src="https://user-images.githubusercontent.com/93947618/230335452-b8bfbb3a-2e0f-4f89-95fa-74079df1b782.png">
 
-<img width="175" alt="Снимок экрана 2023-04-06 в 09 25 24" src="https://user-images.githubusercontent.com/93947618/230332140-d7a04fbb-59e4-4b9b-bc25-3b9034621f3e.png"> <img width="175" alt="Снимок экрана 2023-04-06 в 09 28 08" src="https://user-images.githubusercontent.com/93947618/230332170-1787d22e-294c-4afa-96cf-33cab44a071c.png"> 
+
 
 
 
