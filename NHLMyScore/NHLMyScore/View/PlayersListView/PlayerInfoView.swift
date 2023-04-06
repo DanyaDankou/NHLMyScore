@@ -64,7 +64,7 @@ struct PlayerInfoView: View {
                 HStack {
                     Text("Birthplace:")
                         .foregroundColor(.orange.opacity(0.8))
-                    Text("\(playerDetailViewModel.player?.birthCity ?? ""), \(playerDetailViewModel.player?.birthStateProvince ?? "N/A"),  \(playerDetailViewModel.player?.birthCountry ?? "")")
+                    Text("\(playerDetailViewModel.player?.birthCity ?? ""), \(playerDetailViewModel.player?.birthStateProvince ?? "N/A"), \(playerDetailViewModel.player?.birthCountry ?? "")")
                 }
                 HStack {
                     Text("Position:")
