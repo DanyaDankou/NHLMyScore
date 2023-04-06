@@ -7,11 +7,11 @@
 
 Welcome to the app for viewing information about players and teams in the NHL! The application provides an easy and convenient way to get information about players and teams using the NHL API. At http://statsapi.web.nhl.com/api/v1. You can view the player's full statistics, find out his current status and much more. You can also view information about teams, including a list of players and team statistics. I used the SwiftUI framework to style the app to give you the best user experience and usability. The application has an intuitive interface that allows you to quickly find the information you need and enjoy viewing. Download the app and get your daily watch of information about your favorite team and players!
 
-___________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 
 <img width="175" alt="Снимок экрана 2023-04-06 в 09 25 24" src="https://user-images.githubusercontent.com/93947618/230335432-0da4264c-643e-4d86-983a-ff0b9b3905de.png">.<img width="175" alt="Снимок экрана 2023-04-06 в 09 28 08" src="https://user-images.githubusercontent.com/93947618/230335452-b8bfbb3a-2e0f-4f89-95fa-74079df1b782.png">
 
 ______________________________________________________________________________________________________________________________________
 
-![gifHockey](https://user-images.githubusercontent.com/93947618/230341903-3ab51f38-75b6-4163-8332-9da485db6f17.gif)
+![gifHockey-3](https://user-images.githubusercontent.com/93947618/230342423-5e282318-3745-43b8-a360-7349edd656b1.gif)
