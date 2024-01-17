@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "fd87f7ce7461197ea5af6e4a865168b8fc913ee0",
+          "version": null
+        }
+      },
+      {
+        "package": "PaperOnboarding",
+        "repositoryURL": "https://github.com/Ramotion/paper-onboarding.git",
+        "state": {
+          "branch": null,
+          "revision": "c36df080b1001c385cc14c85f3b1c5ea36531fd0",
+          "version": "6.1.5"
+        }
+      },
+      {
+        "package": "SVGView",
+        "repositoryURL": "https://github.com/exyte/SVGView.git",
+        "state": {
+          "branch": "main",
+          "revision": "b2f2b2a7b576604ad17c11b3af33c27992bc5bcf",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
